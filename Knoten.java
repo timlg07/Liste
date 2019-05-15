@@ -6,4 +6,10 @@ public class Knoten extends Listenelement {
     	this.daten = daten;
     	this.nachfolger = nachfolger;
     }
+
+	@Override
+	public Listenelement endeEinfuegen( Datenelement daten ) {
+		this.nachfolger = this.nachfolger.endeEinfuegen( daten );
+		return this;
+	}
 }
