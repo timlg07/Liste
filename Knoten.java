@@ -17,4 +17,9 @@ public class Knoten extends Listenelement {
 	public int gibLaenge(  ) {
 		return this.nachfolger.gibLaenge() + 1;
 	}
+
+	@Override
+	public String toString(  ) {
+		return this.daten.toString(  ) + " -> " + this.nachfolger.toString();
+	}
 }
