@@ -16,4 +16,9 @@ public class Liste {
     public int gibLaenge(  ) {
     	return this.anfang.gibLaenge();
     }
+
+    @Override
+    public String toString(  ) {
+    	return "[Liste] --> "+this.anfang.toString();
+    }
 }
