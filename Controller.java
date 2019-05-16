@@ -4,6 +4,7 @@ public class Controller {
 		l.endeEinfuegen( new Datenelement( 2 ) );
 		l.endeEinfuegen( new Datenelement( 3 ) );
 		l.anfangEinfuegen( new Datenelement( 1 ) );
-		System.out.println( l.gibLaenge(  ) );
+		System.out.println( l.toString() );
+		System.out.println( l.gibLaenge() );
 	}
 }
