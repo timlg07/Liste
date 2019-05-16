@@ -4,4 +4,9 @@ public class Datenelement {
     public Datenelement( int beispielDaten ) {
     	this.beispielDaten = beispielDaten;
     }
+
+    @Override
+    public String toString(  ) {
+    	return "(d:"+this.beispielDaten+")";
+    }
 }
