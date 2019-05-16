@@ -12,9 +12,4 @@ public class Knoten extends Listenelement {
 		this.nachfolger = this.nachfolger.endeEinfuegen( daten );
 		return this;
 	}
-
-	@Override
-	public int gibLaenge(  ) {
-		return this.nachfolger.gibLaenge() + 1;
-	}
 }

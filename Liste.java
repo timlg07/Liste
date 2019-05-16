@@ -12,8 +12,4 @@ public class Liste {
     public void anfangEinfuegen( Datenelement daten ) {
     	this.anfang = new Knoten( daten,this.anfang ) ;
     }
-
-    public int gibLaenge(  ) {
-    	return this.anfang.gibLaenge();
-    }
 }
