@@ -1,5 +1,6 @@
 public class Abschluss extends Listenelement {
 
+	// F�gt einen neuen Knoten vor sich ein.
 	@Override
 	public Listenelement endeEinfuegen(Datenelement daten) {
 		return new Knoten( daten,this );
