@@ -40,4 +40,11 @@ public class Knoten extends Listenelement {
 				? this.nachfolger
 				: this;
 	}
+
+	// Nicht rekursiv, wird nur beim ersten Element aufgerufen.
+	// Entfernt sich selbst aus der Liste.
+	@Override
+	public Listenelement anfangEntfernen(  ) {
+		return this.nachfolger;
+	}
 }
