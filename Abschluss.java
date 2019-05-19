@@ -25,5 +25,11 @@ public class Abschluss extends Listenelement {
 	@Override
 	public Listenelement entfernen(Datenelement d) {
 		return this;
-	}    
+	}
+
+	// Keine �nderung der Liste, wenn diese nur aus einem Abschluss besteht.
+	@Override
+	public Listenelement anfangEntfernen(  ) {
+		return this;
+	}
 }

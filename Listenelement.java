@@ -5,4 +5,5 @@ public abstract class Listenelement {
 	public abstract String toString(  );
 	public abstract boolean suchen( Datenelement suchObjekt );
 	public abstract Listenelement entfernen( Datenelement d );
+	public abstract Listenelement anfangEntfernen();
 }

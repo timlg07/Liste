@@ -35,4 +35,13 @@ public class Liste {
     public void entfernen( Datenelement d ) {
     	this.anfang.entfernen( d );
     }
+
+    // Entfernt und gibt das erste Element der Liste zur�ck (gibt 'null' zur�ck, wenn die Liste leer ist).
+    public Datenelement anfangEntfernen(  ) {
+    	Listenelement tmp = this.anfang;
+    	this.anfang = this.anfang.anfangEntfernen(  );
+    	return tmp == this.anfang // ~ tmp ist Abschluss
+    			? null
+    			: ( (Knoten)tmp ).daten;
+    }
 }
