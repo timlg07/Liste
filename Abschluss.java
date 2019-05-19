@@ -1,6 +1,17 @@
 public class Abschluss extends Listenelement {
 
-	// Fï¿½gt einen neuen Knoten vor sich ein.
+    @Override
+    public Datenelement gibDaten(  ) {
+    	return null;
+    }
+    
+    @Override
+    public Listenelement gibNachfolger(  ) {
+    	return this;
+    }
+	
+    
+	// Fügt einen neuen Knoten vor sich ein.
 	@Override
 	public Listenelement endeEinfuegen(Datenelement daten) {
 		return new Knoten( daten,this );
@@ -27,9 +38,8 @@ public class Abschluss extends Listenelement {
 		return this;
 	}
 
-	// Keine ï¿½nderung der Liste, wenn diese nur aus einem Abschluss besteht.
 	@Override
-	public Listenelement anfangEntfernen(  ) {
-		return this;
+	public Datenelement endeGeben(  ) {
+		return null;
 	}
 }
