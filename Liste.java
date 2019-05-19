@@ -25,4 +25,14 @@ public class Liste {
     public String toString(  ) {
     	return "[Liste] --> "+this.anfang.toString();
     }
+
+    // �berpr�ft, ob ein Datenelement in der Liste vorhanden ist.
+    public boolean suchen( Datenelement suchObjekt ) {
+    	return this.anfang.suchen( suchObjekt );
+    }
+
+    // Entfernt alle Knoten mit einem �bereinstimmendem Datenelement.
+    public void entfernen( Datenelement d ) {
+    	this.anfang.entfernen( d );
+    }
 }

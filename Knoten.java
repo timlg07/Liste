@@ -25,4 +25,19 @@ public class Knoten extends Listenelement {
 	public String toString(  ) {
 		return this.daten.toString() + " -> " + this.nachfolger.toString();
 	}
+
+	@Override
+	public boolean suchen( Datenelement suchObjekt ) {
+		return this.daten.vergleichen( suchObjekt )
+				? true
+				: this.nachfolger.suchen( suchObjekt );
+	}
+
+	@Override
+	public Listenelement entfernen( Datenelement d ) {
+		this.nachfolger = this.nachfolger.entfernen( d );
+		return this.daten.vergleichen( d )
+				? this.nachfolger
+				: this;
+	}
 }

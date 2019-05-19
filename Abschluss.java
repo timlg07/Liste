@@ -15,4 +15,15 @@ public class Abschluss extends Listenelement {
 	public String toString() {
 		return "[Abschluss]";
 	}
+
+	// Wenn das gesuchte Element bis hierhin noch nicht gefunden wurde, ist es nicht in der Liste enthalten.
+	@Override
+	public boolean suchen( Datenelement suchObjekt ) {
+		return false;
+	}
+
+	@Override
+	public Listenelement entfernen(Datenelement d) {
+		return this;
+	}    
 }
